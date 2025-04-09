@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -53,7 +54,7 @@ public class HomeFragment extends Fragment {
         fragment.setArguments(args);
         return fragment;
     }
-    LinearLayout leaderboardWidget, questsWidget;
+    LinearLayout leaderboardWidget, questsWidget, activityWidget;
     RelativeLayout rewardsWidget;
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -91,6 +92,11 @@ public class HomeFragment extends Fragment {
         leaderboardWidget = view.findViewById(R.id.leaderboardWidget);
         questsWidget = view.findViewById(R.id.questsWidget);
         rewardsWidget = view.findViewById(R.id.rewardsWidget);
+        activityWidget = view.findViewById(R.id.activityWidget);
+
+        activityWidget.setOnClickListener(v -> {
+            Toast.makeText(this.getContext(), "Activities coming soon!", Toast.LENGTH_LONG).show();
+        });
 
         leaderboardWidget.setOnClickListener(new View.OnClickListener() {
             @Override

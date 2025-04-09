@@ -34,7 +34,7 @@ public class QuestMenuActivity extends AppCompatActivity {
         });
 
         completedQuests_btn.setOnClickListener(v -> {
-            Toast.makeText(this, "Coming soon!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Completed quests coming soon!", Toast.LENGTH_SHORT).show();
         });
 
         backBtn.setOnClickListener(v -> finish());
