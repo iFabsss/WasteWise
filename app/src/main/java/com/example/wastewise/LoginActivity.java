@@ -83,8 +83,7 @@ public class LoginActivity extends AppCompatActivity {
         });
 
         signinWithGoogle.setOnClickListener(v -> {
-
-
+            Toast.makeText(this, "Google Sign In coming soon!", Toast.LENGTH_SHORT).show();
         });
 
         createAcc.setOnClickListener(v -> {
@@ -93,7 +92,7 @@ public class LoginActivity extends AppCompatActivity {
         });
 
         forgotPw.setOnClickListener(v -> {
-            // Handle forgot password logic here
+            Toast.makeText(this, "Forgot Password coming soon!", Toast.LENGTH_SHORT).show();
         });
 
 

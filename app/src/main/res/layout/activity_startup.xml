@@ -27,9 +27,10 @@
             android:textSize="42sp"
             android:textStyle="bold"
             android:textColor="#FFEAA6"
-            android:shadowColor="#4D000000"
-            android:shadowDy="5"
-            android:shadowRadius="5"/>
+            android:fontFamily="@font/dmsans"
+            android:shadowColor="@color/black"
+            android:shadowDy="3"
+            android:shadowRadius="3"/>
         <LinearLayout android:id="@+id/btn_container"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -40,13 +41,21 @@
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:text="Signup"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textStyle="bold"
+                android:textSize="24sp"
                 android:layout_marginEnd="20dp"
-                android:textColor="#FFEAA6"/>
+                android:textColor="#FFEAA6"
+                android:backgroundTint="#42C7BB"/>
             <Button android:id="@+id/login_btn"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:text="Login"
-                android:textColor="#FFEAA6"/>
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:textColor="#FFEAA6"
+                android:backgroundTint="#801416"/>
         </LinearLayout>
     </LinearLayout>
 </RelativeLayout>

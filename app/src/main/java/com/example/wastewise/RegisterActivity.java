@@ -78,7 +78,7 @@ public class RegisterActivity extends AppCompatActivity {
 
 
         signinWithGoogle.setOnClickListener(v -> {
-
+            Toast.makeText(this, "Google Sign Up coming soon!", Toast.LENGTH_SHORT).show();
         });
 
         createPlayer.setOnClickListener(v -> registerUser());

@@ -44,7 +44,10 @@
                         android:text="EcoPoints:"
                         android:textColor="#20615B"
                         android:textStyle="bold"
-                        android:textSize="24sp" />
+                        android:textSize="24sp"
+                        android:shadowRadius="3"
+                        android:shadowColor="@color/black"
+                        android:shadowDy="3"/>
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="2dp"
@@ -96,7 +99,10 @@
                             android:layout_height="wrap_content"
                             android:text="Leaderboard"
                             android:textColor="#DECE9C"
-                            android:textStyle="bold"/>
+                            android:textStyle="bold"
+                            android:shadowRadius="3"
+                            android:shadowColor="@color/black"
+                            android:shadowDy="3"/>
                         <ImageView
                             android:layout_marginTop="-8dp"
                             android:layout_width="50dp"
@@ -120,7 +126,10 @@
                             android:layout_height="wrap_content"
                             android:text="Quests"
                             android:textColor="#DECE9C"
-                            android:textStyle="bold"/>
+                            android:textStyle="bold"
+                            android:shadowRadius="3"
+                            android:shadowColor="@color/black"
+                            android:shadowDy="3"/>
                         <ImageView
                             android:layout_marginTop="-8dp"
                             android:layout_width="50dp"
@@ -159,7 +168,10 @@
                     android:text="Redeem your rewards"
                     android:textColor="@color/secondaryColor"
                     android:textSize="24sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:shadowRadius="3"
+                    android:shadowColor="@color/black"
+                    android:shadowDy="3"/>
 
                 <ImageView
                     android:layout_width="40dp"
@@ -193,7 +205,8 @@
                         android:fontFamily="@font/dmsans"
                         android:textColor="@color/primaryColor"
                         android:textStyle="bold"
-                        android:textSize="24sp"/>
+                        android:textSize="24sp"
+                        />
                 </LinearLayout>
                 <View
                     android:layout_width="match_parent"

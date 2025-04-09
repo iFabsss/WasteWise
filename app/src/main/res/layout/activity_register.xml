@@ -46,8 +46,8 @@
                 android:textStyle="bold"
                 android:textSize="24dp"
                 android:shadowRadius="3"
-                android:shadowColor="#4D000000"
-                android:shadowDy="5"
+                android:shadowColor="@color/black"
+                android:shadowDy="3"
                 android:layout_marginBottom="15dp"/>
 
             <TextView android:id="@+id/email_tv"
@@ -56,7 +56,10 @@
                 android:text="Email"
                 android:textColor="@color/white"
                 android:textSize="16sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:shadowRadius="3"
+                android:shadowColor="@color/black"
+                android:shadowDy="3"/>
             <EditText android:id="@+id/email_et"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -72,7 +75,10 @@
                 android:text="Password"
                 android:textColor="@color/white"
                 android:textSize="16sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:shadowRadius="3"
+                android:shadowColor="@color/black"
+                android:shadowDy="3"/>
             <EditText android:id="@+id/password_et"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -87,7 +93,10 @@
                 android:text="Confirm Password"
                 android:textColor="@color/white"
                 android:textSize="16sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:shadowRadius="3"
+                android:shadowColor="@color/black"
+                android:shadowDy="3"/>
             <EditText android:id="@+id/confirmPassword_et"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -106,7 +115,11 @@
                     android:linksClickable="true"
                     android:text="Already have an account? "
                     android:textSize="12sp"
-                    android:textColor="#FFF" />
+                    android:textColor="#FFF"
+                    android:shadowRadius="3"
+                    android:shadowColor="@color/black"
+                    android:shadowDy="3"
+                    />
                 <TextView android:id="@+id/login_tv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -129,6 +142,9 @@
             android:textColor="#FFEAA6"
             android:textSize="24sp"
             android:layout_marginTop="40dp"
+            android:shadowRadius="3"
+            android:shadowColor="@color/black"
+            android:shadowDy="3"
             />
         <LinearLayout
             android:layout_width="match_parent"
@@ -185,8 +201,8 @@
                     android:textColor="@color/white"
                     android:textStyle="bold"
                     android:textSize="18sp"
-                    android:shadowColor="#7D000000"
-                    android:shadowRadius="2"
+                    android:shadowRadius="3"
+                    android:shadowColor="@color/black"
                     android:shadowDy="3"/>
 
             </LinearLayout>
