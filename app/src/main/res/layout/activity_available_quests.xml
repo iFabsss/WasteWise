@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AvailableQuestsActivity"
+    android:background="#151515">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+        <ImageButton android:id="@+id/backBtn"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/backhandicon"
+            android:background="@color/transparent"
+            android:scaleType="fitCenter"
+            android:scaleX="-1"/>
+        <ImageButton android:id="@+id/availableQuests_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/availablequest_btn"
+            android:background="@color/transparent"
+            android:scaleType="fitCenter"
+            android:layout_below="@id/backBtn"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/availableQuests_btn">
+            <LinearLayout android:id="@+id/quests_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+    <FrameLayout
+        android:id="@+id/overlay_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:visibility="gone"
+        android:background="#6D000000">
+    </FrameLayout>
+</RelativeLayout>

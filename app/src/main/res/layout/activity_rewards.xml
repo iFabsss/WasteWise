@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RewardsActivity"
+    android:background="#609966">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/rewardsheaderbg"
+                android:padding="10dp">
+                <ImageButton android:id="@+id/backBtn"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/backhandicon"
+                    android:background="@color/transparent"
+                    android:scaleType="centerCrop"
+                    android:scaleX="-1"
+                    android:layout_centerVertical="true"
+                    />
+                <ImageView android:id="@+id/rewardsHeader"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rewardheader"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="20dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/white_container_bg"
+                    android:orientation="vertical"
+                    android:padding="20dp"
+                    android:layout_marginBottom="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="EcoPoints:"
+                        android:textColor="#20615B"
+                        android:textStyle="bold"
+                        android:textSize="24sp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="#20615B"
+                        android:layout_marginBottom="5dp"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <ImageView android:id="@+id/wastewise_monitor_icon"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/wastewiseicon"
+                            android:scaleType="fitCenter"
+                            android:layout_centerHorizontal="true"/>
+                        <TextView android:id="@+id/ecopoints"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2500"
+                            android:textSize="70sp"
+                            android:fontFamily="@font/jacquard12"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="#FFCE2C"
+                            android:shadowColor="@color/black"
+                            android:shadowRadius="7"
+                            android:layout_below="@id/wastewise_monitor_icon"
+                            android:padding="5dp"
+                            android:layout_marginTop="-35dp"
+                            android:layout_marginBottom="-30dp"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginVertical="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Premium Rewards"
+                        android:fontFamily="@font/dmsans"
+                        android:textColor="#EDF1D6"
+                        android:textSize="24sp"
+                        android:shadowRadius="3"
+                        android:shadowDy="3"
+                        android:shadowColor="@color/black"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/widget_bg"
+                        android:padding="20dp"
+                        android:gravity="center_vertical"
+                        android:layout_marginVertical="5dp">
+                        <ImageView android:id="@+id/premiumChest1_iv"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/premiumchest" />
+                        <TextView android:id="@+id/voucher1_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10% Discount Converge Next Payment"
+                            android:layout_toEndOf="@id/premiumChest1_iv"
+                            android:textColor="#EDF1D6"
+                            android:textSize="16sp"
+                            android:shadowRadius="3"
+                            android:shadowDy="3"
+                            android:shadowColor="@color/black"
+                            android:paddingLeft="5dp"/>
+                        <LinearLayout android:id="@+id/cost_container"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_below="@id/voucher1_tv"
+                            android:layout_alignStart="@id/voucher1_tv"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center_vertical">
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/wastewiseicon"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="50000"
+                                android:textColor="#EDF1D6"
+                                android:textSize="12sp"
+                                android:shadowRadius="3"
+                                android:shadowDy="3"
+                                android:shadowColor="@color/black"/>
+
+
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Redeem"
+                            android:textSize="12sp"
+                            android:textColor="#EDF1D6"
+                            android:background="@drawable/leaderboard_user_container_bg"
+                            android:paddingHorizontal="10dp"
+                            android:paddingVertical="5dp"
+                            android:shadowRadius="3"
+                            android:shadowDy="3"
+                            android:shadowColor="@color/black"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignBottom="@id/cost_container"
+                            />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/widget_bg"
+                        android:padding="20dp"
+                        android:gravity="center_vertical"
+                        android:layout_marginVertical="5dp">
+                        <ImageView android:id="@+id/premiumChest2_iv"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/premiumchest" />
+                        <TextView android:id="@+id/voucher2_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="5% Discount Converge Next Payment"
+                            android:layout_toEndOf="@id/premiumChest2_iv"
+                            android:textColor="#EDF1D6"
+                            android:textSize="16sp"
+                            android:shadowRadius="3"
+                            android:shadowDy="3"
+                            android:shadowColor="@color/black"
+                            android:paddingLeft="5dp"/>
+                        <LinearLayout android:id="@+id/cost2_container"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_below="@id/voucher2_tv"
+                            android:layout_alignStart="@id/voucher2_tv"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center_vertical">
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/wastewiseicon"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="30000"
+                                android:textColor="#EDF1D6"
+                                android:textSize="12sp"
+                                android:shadowRadius="3"
+                                android:shadowDy="3"
+                                android:shadowColor="@color/black"/>
+
+
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Redeem"
+                            android:textSize="12sp"
+                            android:textColor="#EDF1D6"
+                            android:background="@drawable/leaderboard_user_container_bg"
+                            android:paddingHorizontal="10dp"
+                            android:paddingVertical="5dp"
+                            android:shadowRadius="3"
+                            android:shadowDy="3"
+                            android:shadowColor="@color/black"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignBottom="@id/cost2_container"
+                            />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginVertical="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Regular Rewards"
+                        android:fontFamily="@font/dmsans"
+                        android:textColor="#EDF1D6"
+                        android:textSize="24sp"
+                        android:shadowRadius="3"
+                        android:shadowDy="3"
+                        android:shadowColor="@color/black"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/widget_bg"
+                        android:padding="20dp"
+                        android:gravity="center_vertical"
+                        android:layout_marginVertical="5dp">
+                        <ImageView android:id="@+id/regularChest1_iv"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/regularchest" />
+                        <TextView android:id="@+id/regularvoucher1_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="100php Regular Load"
+                            android:layout_toEndOf="@id/regularChest1_iv"
+                            android:textColor="#EDF1D6"
+                            android:textSize="16sp"
+                            android:shadowRadius="3"
+                            android:shadowDy="3"
+                            android:shadowColor="@color/black"
+                            android:paddingLeft="5dp"/>
+                        <LinearLayout android:id="@+id/regularcost_container"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_below="@id/regularvoucher1_tv"
+                            android:layout_alignStart="@id/regularvoucher1_tv"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center_vertical">
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/wastewiseicon"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1000"
+                                android:textColor="#EDF1D6"
+                                android:textSize="12sp"
+                                android:shadowRadius="3"
+                                android:shadowDy="3"
+                                android:shadowColor="@color/black"/>
+
+
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Redeem"
+                            android:textSize="12sp"
+                            android:textColor="#EDF1D6"
+                            android:background="@drawable/leaderboard_user_container_bg"
+                            android:paddingHorizontal="10dp"
+                            android:paddingVertical="5dp"
+                            android:shadowRadius="3"
+                            android:shadowDy="3"
+                            android:shadowColor="@color/black"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignBottom="@id/regularcost_container"
+                            />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/widget_bg"
+                        android:padding="20dp"
+                        android:gravity="center_vertical"
+                        android:layout_marginVertical="5dp">
+                        <ImageView android:id="@+id/regularChest2_iv"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/regularchest" />
+                        <TextView android:id="@+id/regularvoucher2_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="50php Regular Load"
+                            android:layout_toEndOf="@id/regularChest2_iv"
+                            android:textColor="#EDF1D6"
+                            android:textSize="16sp"
+                            android:shadowRadius="3"
+                            android:shadowDy="3"
+                            android:shadowColor="@color/black"
+                            android:paddingLeft="5dp"/>
+                        <LinearLayout android:id="@+id/regularcost2_container"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_below="@id/regularvoucher2_tv"
+                            android:layout_alignStart="@id/regularvoucher2_tv"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center_vertical">
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/wastewiseicon"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="600"
+                                android:textColor="#EDF1D6"
+                                android:textSize="12sp"
+                                android:shadowRadius="3"
+                                android:shadowDy="3"
+                                android:shadowColor="@color/black"/>
+
+
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Redeem"
+                            android:textSize="12sp"
+                            android:textColor="#EDF1D6"
+                            android:background="@drawable/leaderboard_user_container_bg"
+                            android:paddingHorizontal="10dp"
+                            android:paddingVertical="5dp"
+                            android:shadowRadius="3"
+                            android:shadowDy="3"
+                            android:shadowColor="@color/black"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignBottom="@id/regularcost2_container"
+                            />
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

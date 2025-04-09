@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">WasteWise</string>
+    <string name="welcome_to_wastewise">Welcome to WasteWise</string>
+    <string name="glad_to_have_you_back">Glad to have you back</string>
+    <string name="email">Email</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="client_id">815564036195-9cf29ceqfg4cpd4dh8htfvccd6uuttgr.apps.googleusercontent.com</string>
+    <string name="rinse_it_before_you_bin_it">Rinse it before you bin it!</string>
+    <string name="always_clean_recyclables_to_avoid_contamination">- Always clean recyclables to avoid contamination.</string>
+</resources>

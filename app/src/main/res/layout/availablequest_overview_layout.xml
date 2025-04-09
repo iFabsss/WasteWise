@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:background="@drawable/availablequest_container"
+    android:padding="20dp"
+    android:layout_marginBottom="10dp"
+    tools:context=".AvailableQuestsActivity"
+    android:clickable="true">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="20dp">
+        <ImageView android:id="@+id/wastewise_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/wastewiseicon"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitCenter"/>
+        <TextView android:id="@+id/questPoints_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/wastewise_icon"
+            android:text="50"
+            android:fontFamily="@font/dmsans"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFCE2C"
+            android:textSize="18sp"
+            android:shadowRadius="5"
+            android:shadowDy="2"
+            android:shadowColor="@color/black"
+            android:layout_marginTop="-5dp"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        >
+        <TextView android:id="@+id/questTitle_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hydro Hero Hunt"
+            android:fontFamily="@font/dmsans"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:shadowRadius="3"
+            android:shadowDy="3"
+            android:shadowColor="@color/black"/>
+        <TextView android:id="@+id/questDescription_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@tools:sample/lorem[15]"
+            android:fontFamily="@font/dmsans"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            android:shadowRadius="3"
+            android:shadowDy="3"
+            android:shadowColor="@color/black"/>
+    </LinearLayout>
+</LinearLayout>
+

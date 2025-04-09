@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserFragment"
+    android:background="@drawable/profilebackground">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/profiletransparentbackdrop"
+            android:layout_centerInParent="true"
+            android:padding="20dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/profilebackdrop"
+                android:gravity="center"
+                android:padding="20dp">
+                <TextView android:id="@+id/username_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alexander Fabian Guarin"
+                    android:fontFamily="@font/dmsans"
+                    android:textColor="#EDF1D6"
+                    android:textSize="20sp"
+                    android:shadowColor="@color/black"
+                    android:shadowRadius="3"
+                    android:shadowDy="3"/>
+                <TextView android:id="@+id/email_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="aleks@gmail.com"
+                    android:fontFamily="@font/dmsans"
+                    android:textColor="#EDF1D6"
+                    android:textSize="12sp"
+
+                    android:shadowColor="@color/black"
+                    android:shadowRadius="3"
+                    android:shadowDy="3"/>
+
+                <TextView android:id="@+id/uid_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UID: asalsdkjfhwhvp"
+                    android:fontFamily="@font/dmsans"
+                    android:textColor="#EDF1D6"
+                    android:textSize="16sp"
+                    android:textStyle="italic"
+                    android:shadowColor="@color/black"
+                    android:shadowRadius="3"
+                    android:shadowDy="3"/>
+                <ImageView android:id="@+id/userQr_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"/>
+
+                <ImageButton android:id="@+id/logout_btn"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/logoutbtn"
+                    android:background="@color/transparent"
+                    android:scaleType="centerCrop"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/confirmLogout_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#AD000000"
+        android:padding="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone">
+        <ImageView
+            android:layout_width="4000dp"
+            android:layout_height="520dp"
+            android:src="@drawable/scrollbg"
+            android:scaleType="centerCrop"
+            android:paddingVertical="20dp"
+            android:layout_centerInParent="true"/>
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="70dp"
+            android:layout_centerInParent="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already tired, fellow warrior?"
+                android:fontFamily="@font/jacquard12"
+                android:textColor="@color/black"
+                android:textSize="40sp"
+                android:shadowColor="@color/black"
+                android:shadowRadius="3"
+                android:textAlignment="center"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="15dp">
+                <Button android:id="@+id/confirmLogout_Btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#801416"
+                    android:layout_marginRight="5dp"
+                    android:text="yes"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:shadowColor="@color/black"
+                    android:shadowRadius="3"
+                    android:textAlignment="center"/>
+                <Button android:id="@+id/noLogout_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#609966"
+                    android:text="no"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:shadowColor="@color/black"
+                    android:shadowRadius="3"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>
