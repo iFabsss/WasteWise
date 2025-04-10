@@ -54,4 +54,4 @@ This incentivizes consistent participation and builds strong connections with ec
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/WasteWise.git
+   git clone https://github.com/iFabsss/WasteWise.git
